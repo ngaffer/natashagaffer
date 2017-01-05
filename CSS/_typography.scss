@@ -1,0 +1,54 @@
+
+/*=== Mixin ===*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+
+/*=== Variables ===*/
+
+$body-color: #252525;       /* dark grey */
+$highlight-color: #e22e01;  /* red */
+$muted-color: #cc0000;      /* light grey */
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: $body-color;
+  font-weight: 300;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.text-thick {
+	font-weight: 600;
+}
+
+.title-super {
+  font-size: 60px;
+}
+
+.text-highlighted {
+  color: $highlight-color;
+}
+
+.text-muted {
+  color: $muted-color;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+a {
+	font-style: normal;
+	color: $body-color;
+	text-decoration: none;
+}
