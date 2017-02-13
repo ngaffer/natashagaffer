@@ -28,10 +28,7 @@ video {
     display: inline-block;
     vertical-align: baseline
 }
-audio:not([controls]) {
-    display: none;
-    height: 0
-}
+
 [hidden],
 template {
     display: none
@@ -127,11 +124,7 @@ button[disabled],
 html input[disabled] {
     cursor: default
 }
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0
-}
+
 input {
     line-height: normal
 }
@@ -140,17 +133,9 @@ input[type="radio"] {
     box-sizing: border-box;
     padding: 0
 }
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    height: auto
-}
 input[type="search"] {
     -webkit-appearance: textfield;
     box-sizing: content-box
-}
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none
 }
 fieldset {
     border: 1px solid #c0c0c0;
